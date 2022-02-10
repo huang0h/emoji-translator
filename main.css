@@ -39,11 +39,17 @@ header {
     margin-top: 50px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
 
     padding: 0 40px;
     gap: 40px;
+}
+
+@media (min-width: 600px) {
+    #textboxes {
+        flex-direction: row;
+    }
 }
 
 textarea {
