@@ -1,28 +1,21 @@
-/*
------- TO DO ------
-
-***
--- fix unterminated character class error: occuring w/ brackets, who knows what else
-*
--- find a way to preserve current outp, only translate "new" input
-**
--- fill in info section w/ faqs, about, etc.
-*/
-
 let letters = "abcdefghijklmnopqrstuvwxyz";
 
 // default values for text
 let decipherability = 50;
 let chaos = 0;
 
-// set page content to reflect default values
-$("#decipherability").val(decipherability);
-$("#chaos").val(chaos);
-$("#dec-text").text("decipherability: " + decipherability);
-$("#chaos-text").text("chaos: " + chaos);
+$(document).ready(function(){
+    $(this).scrollTop(0);
 
-$("#in").val("type something here and/or play around with the sliders")
-$("#out").val(translate($("#in").val()));
+    // set page content to reflect default values
+    $("#decipherability").val(decipherability);
+    $("#chaos").val(chaos);
+    $("#dec-text").text("decipherability: " + decipherability);
+    $("#chaos-text").text("chaos: " + chaos);
+
+    $("#in").val("type something here and/or play around with the sliders below")
+    $("#out").val(translate($("#in").val()));
+});
 
 document.getElementById("decipherability").oninput = function() {
     decipherability = this.value;

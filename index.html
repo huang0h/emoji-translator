@@ -42,9 +42,9 @@
             </aside>
         </div>
         <br /><br />
-        <p id = "info-link" onclick = "toggleInfo()">
+        <a id = "info-link" onclick = "toggleInfo()" href = "#">
             more info
-        </p>
+        </a>
         <div id = "info">
             <p>
                 made by avery huang &#169; 2022 
@@ -54,7 +54,7 @@
                 </a>
             </p>
             <br /><hr>
-            <section style = "width: 60%; margin: auto;">
+            <section class = "info-text">
                 <h2>Info:</h2>
                 <br />
                 <h3>Why?</h3>
@@ -65,7 +65,7 @@
                 <br />
                 <h3>How does this work?</h3>
                 <br />
-                <p>
+                <p class = "long-info">
                     each letter in the input box is converted into an emoji that resembles that letter 
                     (for example, 📍 looks like an i/I).
                     case is ignored, as are all non-alphabetic characters like numbers and punctuation.

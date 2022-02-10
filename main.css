@@ -9,10 +9,6 @@
     --background-fill: rgba(240, 218, 168, 0.4);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     height: 100%;
     scroll-behavior: smooth;
@@ -38,7 +34,7 @@ header {
 
 @media (min-width: 600px) {
     header {
-        padding-top: 60px;
+        padding-top: 30px;
         line-height: 2.5em;
         font-size: 1.7em;
     }
@@ -49,7 +45,7 @@ header {
     max-width: 1000px;
 
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: column;
@@ -121,12 +117,33 @@ textarea {
 #info {
     display: none;
 
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 50px;
     min-height: 300px;
 
     font-size: 1.2em;
+}
+
+section.info-text {
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 600px) {
+    section.info-text {
+        width: 60%;
+    }
+}
+
+p.long-info {
+    font-size: 0.8em;
+}
+
+@media (min-width: 600px) {
+    p.long-info {
+        font-size: 1em;
+    }
 }
 
 hr {
@@ -137,5 +154,5 @@ hr {
     border-style: inset;
     border-width: 1px;
 
-    width: 50%;
+    width: 60%;
   }
