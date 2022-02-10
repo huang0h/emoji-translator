@@ -26,9 +26,18 @@ body {
 }
 
 header {
-    padding-top: 60px;
-    line-height: 2.5em;
-    font-size: 1.7em;
+    padding-top: 40px;
+    line-height: 2.0em;
+    font-size: 1.3em;
+    margin: 0 10px;
+}
+
+@media (min-width: 600px) {
+    header {
+        padding-top: 60px;
+        line-height: 2.5em;
+        font-size: 1.7em;
+    }
 }
 
 #textboxes {
