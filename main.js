@@ -21,6 +21,8 @@ $("#chaos").val(chaos);
 $("#dec-text").text("decipherability: " + decipherability);
 $("#chaos-text").text("chaos: " + chaos);
 
+$("#in").val("type something here and/or play around with the sliders")
+$("#out").val(translate($("#in").val()));
 
 document.getElementById("decipherability").oninput = function() {
     decipherability = this.value;
@@ -69,4 +71,14 @@ function emojify(letter) {
     // normalize index to prevent out of bounds index
     index = Math.min(emojis.length - 1, Math.max(0, index));
     return emojis[index];
+}
+
+function toggleInfo() {
+    if ($("#info").css("display") == "none") {
+        $("#info").css("display", "block");
+        $("#info-link").text("less info");
+    } else if ($("#info").css("display") == "block") {
+        $("#info").css("display", "none");
+        $("#info-link").text("more info");
+    }
 }
