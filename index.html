@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>PUSHING P</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css" />
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "emoji-list.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                convert text to emojis
+            </h1>
+            <h2>
+                and confuse your friends (or yourself)
+            </h2>
+        </header>
+
+        <div id = "textboxes">
+            <textarea id = "in"></textarea>
+            <textarea id = "out" readonly></textarea>
+        </div>
+
+        <div id = "sliders">
+            <aside class = "slider-wrap">
+                <p id = "dec-text">
+                    decipherability: 50 
+                </p>
+                <br />
+                <input type = "range" min = "0" max = "100" value = "50" id = "decipherability"/>
+            </aside>
+            <aside class = "slider-wrap">
+                <p id = "chaos-text">
+                    chaos: 0 
+                </p>
+                <br />
+                <input type = "range" min = "0" max = "100" value = "0" id = "chaos"/>
+            </aside>
+        </div>
+        <br /><br />
+        <p id = "info-link">
+            info VV
+        </p>
+    </body>
+    <script src = "main.js"></script>
+</html>
