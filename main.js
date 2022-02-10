@@ -77,6 +77,7 @@ function toggleInfo() {
     if ($("#info").css("display") == "none") {
         $("#info").css("display", "block");
         $("#info-link").text("less info");
+        $("#info-link").attr("href", "#textboxes");
     } else if ($("#info").css("display") == "block") {
         $("#info").css("display", "none");
         $("#info-link").text("more info");

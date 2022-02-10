@@ -9,6 +9,10 @@
     --background-fill: rgba(240, 218, 168, 0.4);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100%;
     scroll-behavior: smooth;
@@ -98,8 +102,24 @@ textarea {
     padding: 10px;
 }
 
+#gh-logo:hover {
+    background-color: #00f3ff94;
+    border-radius: 32px;
+}
+
+#info-link {
+    font-weight: bold;
+    text-decoration: underline;
+    min-width: 3%;
+    margin: auto;
+}
+
+#info-link:hover {
+    color: rgba(0, 110, 255, 0.829);
+}
+
 #info {
-    display: block;
+    display: none;
 
     width: 80%;
     margin: auto;

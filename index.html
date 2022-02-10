@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>discount emoji translator</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel = "stylesheet" type = "text/css" href = "main.css" />
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src = "emoji-list.js"></script>
@@ -41,23 +42,46 @@
             </aside>
         </div>
         <br /><br />
-        <a id = "info-link" onclick = "toggleInfo()" href = "#" style = "min-width: 5%; margin: auto; font-size: 1.2em;">
+        <p id = "info-link" onclick = "toggleInfo()">
             more info
-        </a>
+        </p>
         <div id = "info">
             <p>
                 made by avery huang &#169; 2022 
-                <br />
-                <a href = "https://github.com/huang0h" target = "_blank"><img src = "GitHub-Mark-32px.png" /></a>
+                <br /><br />
+                <a href = "https://github.com/huang0h" target = "_blank">
+                    <img id = "gh-logo" src = "images/GitHub-Mark-32px.png"/>
+                </a>
             </p>
             <br /><hr>
-            <h2>FAQ:</h2>
-            <br /><br />
-            <h3>Why?</h3>
-            <br />
-            <p>
-                why not?
-            </p>
+            <section style = "width: 60%; margin: auto;">
+                <h2>Info:</h2>
+                <br />
+                <h3>Why?</h3>
+                <br />
+                <p>
+                    why not?
+                </p>
+                <br />
+                <h3>How does this work?</h3>
+                <br />
+                <p>
+                    each letter in the input box is converted into an emoji that resembles that letter 
+                    (for example, 📍 looks like an i/I).
+                    case is ignored, as are all non-alphabetic characters like numbers and punctuation.
+                    <br /><br />
+                    decipherability determines how much a letter resembles its emoji conversion. 
+                    at low decipherability, a J will be converted into a 👌, while at high decipherability
+                    a J is converted into a 🗾.
+                    <br /><br />
+                    chaos determines how variable the decipherability of the conversion is.
+                    in other words, it determines how many different emojis a single letter may be converted into.
+                    at high chaos, an O might become 💢, 🛑, 🧭, or ⭕. 
+                    <br />
+                    some letters have very few possible conversions
+                    while others have very many; each letter is affected by chaos differently. 
+                </p>
+            </section>
         </div>
     </body>
     <script src = "main.js"></script>
